@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "simple-crm-9b900": {
+      "hosting": {
+        "simpleCRM": [
+          "simple-crm-9b900"
+        ]
+      }
+    }
+  }
+}
