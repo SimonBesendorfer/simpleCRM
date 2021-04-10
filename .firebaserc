@@ -6,6 +6,20 @@
           "simple-crm-9b900"
         ]
       }
+    },
+    "simple-crm-63bf1": {
+      "hosting": {
+        "simpleCRM": [
+          "simple-crm-63bf1"
+        ]
+      }
+    },
+    "simplecrm2-823d9": {
+      "hosting": {
+        "simpleCRM": [
+          "simplecrm2-823d9"
+        ]
+      }
     }
   }
 }
