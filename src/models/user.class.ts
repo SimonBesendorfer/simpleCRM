@@ -21,7 +21,7 @@ export class User{
             lastName: this.lastName,
             birthDate: this.birthDate,
             street: this.street,
-            zipCode: this.street,
+            zipCode: this.zipCode,
             city: this.city
         }
     }

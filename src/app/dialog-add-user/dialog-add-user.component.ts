@@ -11,7 +11,8 @@ export class DialogAddUserComponent implements OnInit {
 
   user: User = new User();
   birthDate: Date;
-  
+  loading: false;
+
   constructor(private firestore: AngularFirestore) { }
 
   ngOnInit(): void {
@@ -20,11 +21,13 @@ export class DialogAddUserComponent implements OnInit {
   saveUser() {
     this.user.birthDate = this.birthDate.getTime();
     console.log("Current user is ", this.user);
+    this.loading = true;
   
     this.firestore
       .collection('users')
       .add(this.user.toJSON())
       .then((result: any) => {
+        this.loading = false;
         console.log('Adding user finished ', result);
       })
 
